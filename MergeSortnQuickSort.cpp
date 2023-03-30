@@ -98,5 +98,14 @@ void display() {
 	cout << "Number of data movements: " << mov_count << endl;
 }
 
+//program utama
+int main() {
+	input();
+	//urutkan array dengan qsort
+	q_sort(0, n - 1);
+	display();
+	system("pause");
 
+	return 0;
+}
 
