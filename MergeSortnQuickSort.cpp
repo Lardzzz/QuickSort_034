@@ -20,9 +20,9 @@ void input() {
 		else
 			cout << "\nMaksimum Panjang Array Adalah 20" << endl;
 	}
-	cout << "\n===================" << endl;
+	cout << "\n-------------------" << endl;
 	cout << "\nEnter Array Element" << endl;
-	cout << "\n===================" << endl;
+	cout << "\n-------------------" << endl;
 
 	for (int i = 0; i < n; i++) {
 		cout << "<" << (i + 1) << ">";
@@ -84,6 +84,19 @@ void q_sort(int low, int high) {
 	
 }
 
+//prosedur display
+void display() {
+	cout << "\n----------" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "\n----------" << endl;
+
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of Comparasions: " << cmp_count << endl;
+	cout << "Number of data movements: " << mov_count << endl;
+}
 
 
 
